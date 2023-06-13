@@ -3,7 +3,20 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 3.5rem;
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(79, 72%, 55%);
+  --first-color-light: hsl(79, 97%, 77%);
+  --first-color-alt: hsl(79, 67%, 52%);
+  --first-color-dark: hsl(79, 63%, 50%);
+  --first-color-gray: hsl(79, 6%, 64%);
+  --title-color: hsl(180, 4%, 98%);
+  --title-color-black: hsl(180, 4%, 12%);
+  --text-color: hsl(180, 4%, 72%);
+  --text-color-light: hsl(180, 4%, 65%);
+  --body-color: hsl(180, 12%, 8%);
 
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
@@ -82,8 +95,8 @@ body {
 h1,
 h2,
 h3 {
-    color: var(--title-color);
-    font-weight: var(--font-bold);
+  color: var(--title-color);
+  font-weight: var(--font-bold);
 }
 
 ul {
@@ -150,8 +163,8 @@ img {
 }
 
 .main {
-    overflow: hidden;
-    /* For animation ScrollReveal */
+  overflow: hidden;
+  /* For animation ScrollReveal */
 }
 
 .color-red {
@@ -163,10 +176,92 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: background .3s;
+}
+
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  display: flex;
+}
+
+.nav__toggle {
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-bold);
+}
+
+.nav__logo img {
+  width: 1.5rem;
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1023px) {
+  .nav__menu {
+    position: fixed;
+    background-color: hsla(180, 12%, 8%, .8);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    border-left: 2px solid var(--first-color-gray);
+    transition: right .3s;
+  }
+
+}
+
+.nav__list {
+  padding: 5rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
+}
+
+.nav__link {
+  color: var(--title-color);
+  transition: color .3s;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
 
 
 /* Show menu */
-
+.show-menu {
+  right: 0;
+}
 
 /* Change background header */
 
