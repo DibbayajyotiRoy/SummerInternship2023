@@ -244,6 +244,11 @@ nav {
   cursor: pointer;
 }
 
+.nav .nav__button {
+  background-color: var(--title-color);
+  border: none;
+}
+
 
 /* Show menu */
 .show-menu {
@@ -327,11 +332,38 @@ nav {
 }
 
 
-
-
-
 /*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--first-color);
+  color: var(--title-color-black);
+  border: 2px solid var(--first-color-light);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button i {
+  font-size: 1.25rem;
+  transition: transform .3s;
+}
+
+.button__flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+}
+
+.button__flex:hover i {
+  transform: translateX(.25rem);
+
+}
 
 /*=============== LOGOS ===============*/
 
