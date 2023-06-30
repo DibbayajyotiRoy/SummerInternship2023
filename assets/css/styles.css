@@ -330,7 +330,6 @@ nav {
   row-gap: 2rem;
 }
 
-<<<<<<< Updated upstream
 .program__card {
   display: grid;
   background-color: hsla(79, 6%, 64%, .07);
@@ -406,8 +405,6 @@ nav {
   opacity: 1;
 }
 
-=======
->>>>>>> Stashed changes
 /*=============== CHOOSE ===============*/
 .choose {
   padding-bottom: 0;
