@@ -369,6 +369,18 @@ nav {
 }
 
 /*=============== LOGOS ===============*/
+.logos__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--title-color);
+  font-family: var(--body-font);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  font-size: var(--big-font-size);
+  letter-spacing: 1.5px;
+}
+
 .logos__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
