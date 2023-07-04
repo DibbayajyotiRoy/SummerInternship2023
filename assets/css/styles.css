@@ -20,17 +20,17 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Red Hat Display', sans-serif;
-  --second-font: 'Kaushan Script', cursive;
+  --body-font: "Red Hat Display", sans-serif;
+  --second-font: "Kaushan Script", cursive;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.5rem;
   --big-font-size: 1.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-bold: 700;
@@ -51,8 +51,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -113,7 +113,7 @@ img {
 .section__data {
   display: flex;
   flex-direction: column;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -135,7 +135,7 @@ img {
 
 .section__titles {
   display: flex;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   justify-content: center;
 }
 
@@ -170,7 +170,7 @@ header {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 nav {
@@ -190,7 +190,7 @@ nav {
 
 .nav__toggle {
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
   font-weight: var(--font-bold);
 }
 
@@ -203,10 +203,10 @@ nav {
   cursor: pointer;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
-    background-color: hsla(180, 12%, 8%, .8);
+    background-color: hsla(180, 12%, 8%, 0.8);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     top: 0;
@@ -214,9 +214,8 @@ nav {
     width: 80%;
     height: 100%;
     border-left: 2px solid var(--first-color-gray);
-    transition: right .3s;
+    transition: right 0.3s;
   }
-
 }
 
 .nav__list {
@@ -228,7 +227,7 @@ nav {
 
 .nav__link {
   color: var(--title-color);
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .nav__link:hover {
@@ -244,25 +243,12 @@ nav {
   cursor: pointer;
 }
 
-.nav .nav__button {
-  background-color: var(--title-color);
-  border: none;
-}
-
-
 /* Show menu */
 .show-menu {
   right: 0;
 }
 
-
-
-
 /* Change background header */
-.bg-header {
-  background-color: var(--body-color);
-  box-shadow: 0 4px 8px hsla(180, 12%, 4%, .3);
-}
 
 /* Active link */
 
@@ -295,7 +281,7 @@ nav {
 .home__title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-black);
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .home__subtitle,
@@ -333,44 +319,12 @@ nav {
 .home__img {
   display: block;
   position: relative;
+  width: 305px;
   z-index: 1;
-  width: 350px;
   margin: 0 auto;
 }
 
-
 /*=============== BUTTON ===============*/
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--first-color);
-  color: var(--title-color-black);
-  border: 2px solid var(--first-color-light);
-  font-weight: var(--font-bold);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: var(--first-color-alt);
-}
-
-.button i {
-  font-size: 1.25rem;
-  transition: transform .3s;
-}
-
-.button__flex {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: .5rem;
-}
-
-.button__flex:hover i {
-  transform: translateX(.25rem);
-
-}
 
 /*=============== LOGOS ===============*/
 .logos__content {
@@ -551,7 +505,6 @@ nav {
   z-index: 1;
   margin: 0 auto;
 }
-
 
 
 /*=============== PRICING ===============*/
@@ -818,7 +771,6 @@ nav {
   transform: translateY(1rem);
 }
 
-
 /*=============== SCROLL BAR ===============*/
 
 ::-webkit-scrollbar {
@@ -854,7 +806,6 @@ nav {
 .scrollup:hover {
   transform: translateY(-.25rem);
 }
-
 
 /* Show Scroll Up*/
 .show-scroll {
@@ -901,8 +852,6 @@ nav {
   }
 }
 
-
 /* For medium devices */
-
 
 /* For large devices */
