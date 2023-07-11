@@ -199,3 +199,30 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/*=============== FLEX MUSCLE ===============*/
+
+.flexMuscle__container {
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexMuscle__row {
+    flex-basis: 50%;
+    min-width: 260px;
+}
+
+.flexMuscle__img {
+    width: 84%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.flexMuscle__content .section__data {
+    padding: 60px 0;
+}
