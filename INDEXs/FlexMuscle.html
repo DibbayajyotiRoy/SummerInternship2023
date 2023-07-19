@@ -25,26 +25,99 @@
     />
   </head>
   <body>
-    <section class="flexMuscle section" id="flexMuscle">
-      <div class="flexMuscle__overflow">
-        <div class="flexMuscle__container container grid">
-          <div class="flexMuscle__row">
-            <div class="flexMuscle__content">
-              <div class="section__data">
-                <h2 class="section__subtitle">FlexMuscle</h2>
-              </div>
+    <div class="flex__muscle__container">
+      <div class="row">
+        <div class="col">
+          <div class="feature__img">
+            <img
+              src="/assets/Videos/Flexing Muscle.io.jpeg"
+              width="100%"
+              alt=""
+            />
+            <img
+              src="/assets/Videos/play.png"
+              alt=""
+              class="play-btn"
+              onclick="playVideo('assets/Videos/video1.mp4')"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="small-img-row">
+            <div class="small__img">
+              <img src="/assets/Videos/Flexing Muscle.io.jpeg" alt="" />
+              <img src="/assets/Videos/play.png" alt="" class="play-btn" />
             </div>
 
-            <div class="flexMuscle__images">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Voluptate itaque error sed?
+            </p>
+          </div>
+
+          <div class="small-img-row">
+            <div class="small__img">
+              <img src="/assets/Videos/Flexing Muscle.io.jpeg" alt="" />
+              <img src="/assets/Videos/play.png" alt="" class="play-btn" />
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Voluptate itaque error sed?
+            </p>
+          </div>
+
+          <div class="small-img-row">
+            <div class="small__img">
+              <img src="/assets/Videos/Flexing Muscle.io.jpeg" alt="" />
               <img
-                src="/assets/Videos/Flexing Muscle.io.jpeg"
-                alt="flexMuscle Image"
-                class="flexMuscle__img"
+                src="/assets/Videos/play.png"
+                alt=""
+                class="play-btn"
+                onclick="playVideo('assets/Videos/video1.mp4')"
               />
             </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Voluptate itaque error sed?
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+      <video width="100%" controls autoplay id="myVideo">
+        <source src="/assets/Videos/video1.mp4" type="video/mp4" />
+      </video>
+      <img
+        src="/assets/Videos/close.png"
+        alt=""
+        class="close__btn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 30px;
+          cursor: pointer;
+        "
+        onclick="stopVideo()"
+      />
+    </div>
+
+    <script>
+      var videoPlayer = document.getElementById("videoPlayer");
+      var myVideo = document.getElementById("myVideo");
+
+      function stopVideo() {
+        videoPlayer.style.display = "none";
+      }
+
+      function playVideo(file) {
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+      }
+    </script>
   </body>
 </html>
